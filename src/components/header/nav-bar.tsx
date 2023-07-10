@@ -7,7 +7,7 @@ export const NavBar = () => (
         <div className="flex items-center">
           <div className="flex-shrink-0">
             <a href="#" className="text-white font-semibold text-lg">
-              Logo
+              <Image src="/logo-dark.svg" alt="Logo" width={150} height={40} />
             </a>
           </div>
           <div className="hidden md:block">
