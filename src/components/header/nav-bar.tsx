@@ -9,8 +9,8 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="bg-slate-50 drop-shadow-xl lg:max-w-screen-xl mx-8 my-8 rounded-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-slate-50 drop-shadow-xl lg:max-w-screen-xl m-8 rounded-xl">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <a href="#" className="">
