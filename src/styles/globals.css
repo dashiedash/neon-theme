@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate-45 {
+  transform: rotate(90deg);
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

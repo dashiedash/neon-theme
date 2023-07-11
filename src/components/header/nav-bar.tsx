@@ -17,31 +17,32 @@ export const NavBar = () => {
               <Image src="/logo-dark.svg" alt="Logo" width={110} height={40} />
             </a>
           </div>
+          {/* Nav Bar on PC Screens */}
           <div className="hidden lg:block">
             <div className="ml-10 flex items-center space-x-4">
               <a
                 href="#"
-                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 rounded-md text-sm">
+                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 text-sm">
                 Features
               </a>
               <a
                 href="#"
-                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 rounded-md text-sm">
+                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 text-sm">
                 Style Guides
               </a>
               <a
                 href="#"
-                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 rounded-md text-sm">
+                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 text-sm">
                 Tags
               </a>
               <a
                 href="#"
-                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 rounded-md text-sm">
+                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 text-sm">
                 Authors
               </a>
               <a
                 href="#"
-                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 rounded-md text-sm">
+                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 text-sm">
                 More
               </a>
               <svg
@@ -72,66 +73,88 @@ export const NavBar = () => {
               </svg>
               <a
                 href="#"
-                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-4 py-4 rounded-md text-sm">
+                className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-4 py-4 text-sm">
                 Sign In
               </a>
               <a
                 href="#"
-                className="bg-rose-500 text-white px-4 py-2 rounded-full text-sm font-medium">
+                className="bg-rose-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-rose-400 ease-in-out duration-300">
                 Become a Member
               </a>
             </div>
           </div>
-          <div className="lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
+          {/* Nav Bar on tablet screens and smaller */}
+          <div className="lg:hidden rounded-xl">
+            <button
+              className={`transform ${isMenuOpen ? "rotate-45" : ""}`}
               onClick={toggleMenu}>
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className={`w-6 h-6 transition-opacity absolute ${
+                  isMenuOpen ? "opacity-0" : "opacity-100"
+                }`}>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className={`w-6 h-6 transition-opacity ${
+                  isMenuOpen ? "opacity-100" : "opacity-0"
+                }`}>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
             {isMenuOpen && (
-              <div className="absolute z-10 right-0 top-14 bg-white py-2 px-4 rounded-md shadow-lg">
+              <div className="absolute z-10 right-0 top-14 bg-white py-4 px-4 rounded-md shadow-lg">
                 <a
                   href="#"
-                  className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">
+                  className="block hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-2 text-sm ease-in-out duration-300">
                   Features
                 </a>
                 <a
                   href="#"
-                  className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">
+                  className="block hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-2 text-sm ease-in-out duration-300">
                   Style Guides
                 </a>
                 <a
                   href="#"
-                  className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">
+                  className="block hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-2 text-sm ease-in-out duration-300">
                   Tags
                 </a>
                 <a
                   href="#"
-                  className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">
+                  className="block hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-2 text-sm ease-in-out duration-300">
                   Authors
                 </a>
                 <a
                   href="#"
-                  className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">
+                  className="block hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-2 text-sm ease-in-out duration-300">
                   More
                 </a>
                 <a
                   href="#"
-                  className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">
+                  className="block hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-2 text-sm ease-in-out duration-300">
                   Sign In
                 </a>
                 <a
                   href="#"
-                  className="block py-2 px-4 text-sm text-white bg-rose-500 rounded-md hover:bg-rose-600">
+                  className="block my-4 py-2 px-4 text-sm text-white bg-rose-500 rounded-full hover:bg-rose-400 ease-in-out duration-300">
                   Become a Member
                 </a>
               </div>
