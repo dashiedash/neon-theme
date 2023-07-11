@@ -45,6 +45,7 @@ export const NavBar = () => {
                 className="hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-4 text-sm">
                 More
               </a>
+              {/* Search */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -58,6 +59,7 @@ export const NavBar = () => {
                   d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                 />
               </svg>
+              {/* Toggle Modes */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -157,6 +159,36 @@ export const NavBar = () => {
                   className="block my-4 py-2 px-4 text-sm text-white bg-rose-500 rounded-full hover:bg-rose-400 ease-in-out duration-300">
                   Become a Member
                 </a>
+                <div className="flex justify-evenly">
+                  {/* Search */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                  {/* Toggle Modes */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </svg>
+                </div>
               </div>
             )}
           </div>
