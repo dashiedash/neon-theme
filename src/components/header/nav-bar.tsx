@@ -123,7 +123,7 @@ export const NavBar = () => {
             </button>
 
             {isMenuOpen && (
-              <div className="absolute z-10 right-0 top-14 bg-white py-4 px-4 rounded-md shadow-lg">
+              <div className="absolute right-4 z-20 bg-white py-4 px-4 rounded-md shadow-lg">
                 <a
                   href="#"
                   className="block hover:underline underline-offset-4 decoration-2 decoration-rose-500 px-2 py-2 text-sm ease-in-out duration-300">
