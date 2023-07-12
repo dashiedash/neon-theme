@@ -1,15 +1,16 @@
 import Image from "next/image";
 
-export const PostHeader = (props: { posts: any }) => {
+// Article Header
+export const ArticleHeader = (props: { posts: any }) => {
   const post = props.posts;
 
   return (
     <div className="">
-      {/* Post Title */}
+      {/* Article Title */}
       <h1 className="text-4xl font-bold mt-7 mb-5">{post.title}</h1>
 
       <div className="flex justify-between my-5">
-        {/* Post Meta: Author */}
+        {/* Article Meta: Author */}
         <div className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,7 @@ export const PostHeader = (props: { posts: any }) => {
           <p className="text-xs text-neutral-500">{post.author}</p>
         </div>
 
-        {/* Post Meta: Publish Date */}
+        {/* Article Meta: Publish Date */}
         <div className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +46,7 @@ export const PostHeader = (props: { posts: any }) => {
           <p className="text-xs text-neutral-500">{post.publishDate}</p>
         </div>
 
-        {/* Post Meta: Read Duration */}
+        {/* Article Meta: Read Duration */}
         <div className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +68,8 @@ export const PostHeader = (props: { posts: any }) => {
   );
 };
 
-export const PostQuoteBlock = (props: { quote: any }) => {
+// Article Quote Block
+export const ArticleQuoteBlock = (props: { quote: any }) => {
   const quote = props.quote;
 
   return (
@@ -77,7 +79,8 @@ export const PostQuoteBlock = (props: { quote: any }) => {
   );
 };
 
-export const PostImage = (props: {
+// Article Image
+export const ArticleImage = (props: {
   attribName: any;
   attribNameLink: any;
   attribSource: any;

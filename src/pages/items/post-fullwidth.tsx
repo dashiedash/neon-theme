@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { NavBar } from "@/components/header/nav-bar";
-import { PostHeader, PostQuoteBlock, PostImage } from "@/components/main/post";
+import { ArticleHeader, ArticleQuoteBlock, ArticleImage } from "@/components/main/post";
 
 const PostFullwidth = () => {
   const [post, setPost] = useState({
@@ -26,7 +26,7 @@ const PostFullwidth = () => {
         </div>
 
         <article className="bg-neutral-50 p-10 drop-shadow-xl rounded-xl my-8">
-          <PostHeader posts={post} />
+          <ArticleHeader posts={post} />
           <p className="mb-5">
             Before long the searchlight discovered some distance away a schooner
             with all sails set, apparently the same vessel which had been
@@ -50,7 +50,7 @@ const PostFullwidth = () => {
             somewhere, if it was only in hell.
           </p>
 
-          <PostImage
+          <ArticleImage
             imageSource="/jpeg/photo-owens1.jpg"
             attribName="Jakob Owens"
             attribNameLink="https://unsplash.com/@jakobowens1?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
@@ -67,7 +67,7 @@ const PostFullwidth = () => {
             before.
           </p>
 
-          <PostQuoteBlock quote="A mind that is stretched by a new experience can never go back to its old dimensions" />
+          <ArticleQuoteBlock quote="A mind that is stretched by a new experience can never go back to its old dimensions" />
 
           <p className="mb-5">
             The rays of the searchlight were kept fixed on the harbour mouth
@@ -79,7 +79,7 @@ const PostFullwidth = () => {
             all sail set, and gained the safety of the harbour.
           </p>
 
-          <PostImage
+          <ArticleImage
             imageSource="/jpeg/photo-neill1.jpg"
             attribName="Austin Neill"
             attribNameLink="https://unsplash.com/@arstyy?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
@@ -112,7 +112,7 @@ const PostFullwidth = () => {
             </li>
           </ul>
 
-          <PostQuoteBlock quote="Without new experiences, something inside of us sleeps. The sleeper must awaken. – Frank Herbert" />
+          <ArticleQuoteBlock quote="Without new experiences, something inside of us sleeps. The sleeper must awaken. – Frank Herbert" />
 
           <p className="mb-3">
             There was of course a considerable concussion as the vessel drove up
@@ -123,7 +123,7 @@ const PostFullwidth = () => {
             running forward, jumped from the bow on the sand.
           </p>
 
-          <PostImage
+          <ArticleImage
             imageSource="/jpeg/photo-tarampi1.jpg"
             attribName="Randy Tarampi"
             attribNameLink="https://unsplash.com/@randytarampi?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
