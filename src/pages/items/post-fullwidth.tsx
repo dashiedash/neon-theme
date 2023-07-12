@@ -7,7 +7,7 @@ const PostFullwidth = () => {
     <div className="max-w-screen-xl mx-auto">
       <NavBar />
       <main className="m-8">
-        <div className="bg-slate-50 p-4 drop-shadow-xl rounded-xl my-8">
+        <div className="bg-neutral-50 p-4 drop-shadow-xl rounded-xl my-8">
           <Image
             src="/jpeg/photo-ship.jpg"
             alt=""
@@ -16,7 +16,7 @@ const PostFullwidth = () => {
             className="rounded-xl"
           />
         </div>
-        <article className="bg-slate-50 p-10 drop-shadow-xl rounded-xl my-8">
+        <article className="bg-neutral-50 p-10 drop-shadow-xl rounded-xl my-8">
           <h1 className="text-4xl font-bold mt-7 mb-3">
             Never let your memories be greater than your dreams
           </h1>
