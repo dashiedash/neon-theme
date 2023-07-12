@@ -123,6 +123,14 @@ const PostFullwidth = () => {
             running forward, jumped from the bow on the sand.
           </p>
 
+          <PostImage
+            imageSource="/jpeg/photo-tarampi1.jpg"
+            attribName="Randy Tarampi"
+            attribNameLink="https://unsplash.com/@randytarampi?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+            attribSource="Unsplash"
+            attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+          />
+
           <p className="mb-3">
             Making straight for the steep cliff, where the churchyard hangs over
             the laneway to the East Pier so steeply that some of the flat
