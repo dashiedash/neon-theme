@@ -121,3 +121,12 @@ export const ArticleImage = (props: {
     </figure>
   );
 };
+
+// Social Links
+export const SocialLinks = () => {
+  return (
+    <section className="bg-neutral-50 p-10 drop-shadow-xl rounded-xl my-8">
+      <h1>Hello world!</h1>
+    </section>
+  );
+};

@@ -1,7 +1,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import { NavBar } from "@/components/header/nav-bar";
-import { ArticleHeader, ArticleQuoteBlock, ArticleImage } from "@/components/main/post";
+import {
+  ArticleHeader,
+  ArticleQuoteBlock,
+  ArticleImage,
+  SocialLinks,
+} from "@/components/main/post";
 
 const PostFullwidth = () => {
   const [post, setPost] = useState({
@@ -152,6 +157,8 @@ const PostFullwidth = () => {
             there.
           </p>
         </article>
+
+        <SocialLinks />
       </main>
     </div>
   );
