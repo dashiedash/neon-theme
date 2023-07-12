@@ -79,6 +79,14 @@ const PostFullwidth = () => {
             all sail set, and gained the safety of the harbour.
           </p>
 
+          <PostImage
+            imageSource="/jpeg/photo-neill1.jpg"
+            attribName="Austin Neill"
+            attribNameLink="https://unsplash.com/@arstyy?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+            attribSource="Unsplash"
+            attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+          />
+
           <h2 className="text-2xl font-bold mt-7 mb-3">
             Life is short and the world is wide
           </h2>
