@@ -98,7 +98,7 @@ export const ArticleImage = (props: {
       <Image
         src={imageSource}
         alt=""
-        width={600}
+        width={1920}
         height={400}
         className="rounded-xl"
       />
