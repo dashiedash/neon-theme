@@ -5,8 +5,8 @@ import {
   ArticleHeader,
   ArticleQuoteBlock,
   ArticleImage,
-  SocialLinks,
-} from "@/components/main/post";
+} from "@/components/main/article";
+import { SocialLinks } from "@/components/main/social-links";
 
 const PostFullwidth = () => {
   const [post, setPost] = useState({
