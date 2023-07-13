@@ -12,7 +12,7 @@ import { AuthorCard } from "@/components/main/author";
 const PostFullwidth = () => {
   const [post, setPost] = useState({
     title: "Never let your memories be greater than your dreams",
-    author: "Apurba Talukdar & Ishan Sharma",
+    author: ["Apurba Talukdar", "Ishan Sharma"],
     publishDate: "May 2, 2022",
     readTime: "4 min read",
   });
@@ -163,7 +163,7 @@ const PostFullwidth = () => {
 
         <AuthorCard
           image="/jpeg/apurba-talukdar.jpg"
-          name="Apurpba Talukdar"
+          name="Apurba Talukdar"
           location="Bangalore"
           desc="Apurba is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover."
         />
