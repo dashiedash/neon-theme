@@ -1,4 +1,7 @@
 // Utilities
+// Imports
+import React from "react";
+
 // Get color of the button based on the tag
 const getTagColor = (tag: string) => {
   switch (tag) {
@@ -83,39 +86,42 @@ export const TagGroup = () => {
 };
 
 // Newsletter Component
-import React from "react";
-
-const Newsletter = () => {
-  const handleSubmit = (event) => {
+export const Newsletter = () => {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    // Handle form submission here
   };
 
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-4">Newsletter</h2>
-      <p className="text-gray-600 mb-6">
-        Get the latest posts delivered straight to your inbox.
-      </p>
+    <section className="bg-rose-500 text-center p-8 rounded-xl">
+      <header>
+        <h2 className="text-2xl font-bold text-neutral-50 mb-2">Newsletter</h2>
+        <p className="text-white mb-6">
+          Get the latest posts delivered straight to your inbox.
+        </p>
+      </header>
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
           type="text"
           placeholder="Your name"
-          className="px-4 py-2 border border-gray-300 rounded"
+          id="name"
+          required
+          aria-required="true"
+          className="px-6 py-2 border border-gray-300 rounded-full"
         />
         <input
           type="email"
           placeholder="Your email address"
-          className="px-4 py-2 border border-gray-300 rounded"
+          id="email"
+          required
+          aria-required="true"
+          className="px-6 py-2 border border-gray-300 rounded-full"
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+          className="bg-neutral-50 py-2 px-4 rounded-full hover:bg-rose-100">
           Subscribe
         </button>
       </form>
-    </div>
+    </section>
   );
 };
-
-export default Newsletter;
