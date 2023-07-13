@@ -1,3 +1,5 @@
+// Utilities
+// Get color of the button based on the tag
 const getTagColor = (tag: string) => {
   switch (tag) {
     case "Food":
@@ -26,6 +28,8 @@ const getTagColor = (tag: string) => {
   }
 };
 
+// Components
+// Tag Component
 export const Tags = (props: { tags: string[] }) => {
   const { tags } = props;
 
@@ -45,7 +49,8 @@ export const Tags = (props: { tags: string[] }) => {
   );
 };
 
-export const TagGroups = () => {
+// Tag Group Component
+export const TagGroup = () => {
   const post = [
     "Food",
     "Health",
@@ -76,3 +81,41 @@ export const TagGroups = () => {
     </section>
   );
 };
+
+// Newsletter Component
+import React from "react";
+
+const Newsletter = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission here
+  };
+
+  return (
+    <div>
+      <h2 className="text-2xl font-bold mb-4">Newsletter</h2>
+      <p className="text-gray-600 mb-6">
+        Get the latest posts delivered straight to your inbox.
+      </p>
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+        <input
+          type="text"
+          placeholder="Your name"
+          className="px-4 py-2 border border-gray-300 rounded"
+        />
+        <input
+          type="email"
+          placeholder="Your email address"
+          className="px-4 py-2 border border-gray-300 rounded"
+        />
+        <button
+          type="submit"
+          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default Newsletter;
