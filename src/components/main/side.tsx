@@ -67,7 +67,7 @@ export const TagGroup = () => {
   return (
     <section>
       <h2 className="font-bold">Tags</h2>
-      <div className="my-8 space-y-3">
+      <div className="my-4 space-y-3">
         {post.map((post) => (
           <a
             href={`#${post}`}
