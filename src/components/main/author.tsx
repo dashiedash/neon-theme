@@ -13,7 +13,7 @@ export const AuthorCard = (props: {
   const desc = props.desc;
 
   return (
-    <div className="bg-neutral-50 p-10 drop-shadow-xl rounded-xl my-8 flex flex-col md:flex-row">
+    <div className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8 flex flex-col md:flex-row">
       {/* Author Picture */}
       <div className="aspect-square h-40 mx-auto md:mx-5 my-4 relative">
         <Image
