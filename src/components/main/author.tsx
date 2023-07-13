@@ -13,29 +13,28 @@ export const AuthorCard = (props: {
   const desc = props.desc;
 
   return (
-    <div className="bg-neutral-50 p-10 drop-shadow-xl rounded-xl my-8">
+    <div className="bg-neutral-50 p-10 drop-shadow-xl rounded-xl my-8 flex flex-col md:flex-row">
       {/* Author Picture */}
-      <div className="w-40 h-40 mx-auto md:mx-5 my-4">
+      <div className="aspect-square h-40 mx-auto md:mx-5 my-4 relative">
         <Image
           src={image}
           alt=""
-          width={700}
-          height={700}
+          fill={true}
           objectFit="cover"
           className="rounded-lg"
         />
       </div>
 
       {/* Author Meta */}
-      <div className="">
+      <div className=" my-4">
         {/* Author Name */}
         <p className="font-bold text-center md:text-left md:text-xl">{name}</p>
 
         {/* Author Social Links */}
-        <div className="m-1 flex justify-center flex-wrap">
+        <div className="my-2 flex justify-center md:justify-start flex-wrap space-x-3">
           {/* Location */}
           <Tooltip content={location} color="invert">
-            <a target="_blank" className="p-2 bg-neutral-200 rounded-full m-2">
+            <a target="_blank" className="p-2 bg-neutral-200 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -61,7 +60,7 @@ export const AuthorCard = (props: {
           <a
             href=""
             target="_blank"
-            className="p-2 bg-neutral-200 rounded-full m-2">
+            className="p-2 bg-neutral-200 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -74,7 +73,7 @@ export const AuthorCard = (props: {
           <a
             href=""
             target="_blank"
-            className="p-2 bg-neutral-200 rounded-full m-2">
+            className="p-2 bg-neutral-200 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
@@ -87,7 +86,7 @@ export const AuthorCard = (props: {
           <a
             href=""
             target="_blank"
-            className="p-2 bg-neutral-200 rounded-full m-2">
+            className="p-2 bg-neutral-200 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
