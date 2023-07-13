@@ -11,7 +11,7 @@ import {
 } from "@/components/main/article";
 import { SocialLinks } from "@/components/main/social-links";
 import { AuthorCard } from "@/components/main/author";
-import { Tags } from "@/components/main/side";
+import { Tags, TagGroups } from "@/components/main/side";
 
 // Content
 const PostFullwidth = () => {
@@ -20,15 +20,7 @@ const PostFullwidth = () => {
     author: ["Apurba Talukdar", "Ishan Sharma"],
     publishDate: "May 2, 2022",
     readTime: "4 min read",
-    tags: [
-      "Food",
-      "Health",
-      "Inspiration",
-      "Lifestyle",
-      "Nature",
-      "Technology",
-      "Travel",
-    ],
+    tags: ["Travel"],
   });
 
   return (
@@ -49,6 +41,7 @@ const PostFullwidth = () => {
           {/* Main Content */}
           <div className="container lg:col-span-2">
             <article className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8">
+              <Tags tags={post.tags} />
               <ArticleHeader posts={post} />
               <p className="mb-5">
                 Before long the searchlight discovered some distance away a
@@ -206,7 +199,7 @@ const PostFullwidth = () => {
           {/* Sidebar */}
           <div className="container">
             <div className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8">
-              <Tags tags={post.tags} />
+              <TagGroups />
             </div>
           </div>
         </div>
