@@ -7,6 +7,7 @@ import {
   ArticleImage,
 } from "@/components/main/article";
 import { SocialLinks } from "@/components/main/social-links";
+import { AuthorCard } from "@/components/main/author";
 
 const PostFullwidth = () => {
   const [post, setPost] = useState({
@@ -159,6 +160,20 @@ const PostFullwidth = () => {
         </article>
 
         <SocialLinks />
+
+        <AuthorCard
+          image="/jpeg/apurba-talukdar.jpg"
+          name="Apurpba Talukdar"
+          location="Bangalore"
+          desc="Apurba is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover."
+        />
+
+        <AuthorCard
+          image="/jpeg/ishan-sharma.jpg"
+          name="Ishan Sharma"
+          location="Delhi"
+          desc="Ishan is back end developer by profession and writer by passion. He writes science fiction novels and short story mostly for children. He is the always smiling person."
+        />
       </main>
     </div>
   );
