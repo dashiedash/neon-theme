@@ -9,7 +9,7 @@ export const ArticleHeader = (props: { posts: any }) => {
       {/* Article Title */}
       <h1 className="text-4xl font-bold mt-7 mb-5">{post.title}</h1>
 
-      <div className="flex justify-between my-5">
+      <div className="flex my-5 space-x-6">
         {/* Article Meta: Author */}
         <div className="flex items-center">
           <svg
