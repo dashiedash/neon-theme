@@ -11,7 +11,7 @@ import {
 } from "@/components/main/article";
 import { SocialLinks } from "@/components/main/social-links";
 import { AuthorCard } from "@/components/main/author";
-import { Tags, TagGroups } from "@/components/main/side";
+import { Tags, TagGroup } from "@/components/main/side";
 
 // Content
 const PostFullwidth = () => {
@@ -199,7 +199,7 @@ const PostFullwidth = () => {
           {/* Sidebar */}
           <div className="container">
             <div className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8">
-              <TagGroups />
+              <TagGroup />
             </div>
           </div>
         </div>
