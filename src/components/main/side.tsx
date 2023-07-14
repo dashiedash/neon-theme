@@ -92,7 +92,7 @@ export const Newsletter = () => {
   };
 
   return (
-    <section className="bg-rose-500 text-center p-8 rounded-xl">
+    <section className="bg-rose-500 text-center p-8 rounded-xl my-8">
       <header>
         <h2 className="text-2xl font-bold text-neutral-50 mb-2">Newsletter</h2>
         <p className="text-white mb-6">
