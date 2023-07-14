@@ -17,9 +17,9 @@ export const NewsletterFooter = () => {
   };
 
   return (
-    <section className="my-8">
+    <section className="">
       <header>
-        <h2 className="font-bold mb-2">Newsletter</h2>
+        <h2 className="sm:text-lg font-bold mb-2">Newsletter</h2>
         <p className="mb-6">
           Get the latest posts delivered straight to your inbox.
         </p>

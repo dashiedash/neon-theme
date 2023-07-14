@@ -66,7 +66,7 @@ export const TagGroupMain = () => {
 
   return (
     <section>
-      <h2 className="font-bold">Tags</h2>
+      <h2 className="sm:text-lg font-bold">Tags</h2>
       <div className="my-4 space-y-3">
         {post.map((post) => (
           <a
@@ -99,23 +99,25 @@ export const NewsletterMain = () => {
           Get the latest posts delivered straight to your inbox.
         </p>
       </header>
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-        <input
-          type="text"
-          placeholder="Your name"
-          id="name"
-          required
-          aria-required="true"
-          className="px-6 py-2 border border-gray-300 rounded-full"
-        />
-        <input
-          type="email"
-          placeholder="Your email address"
-          id="email"
-          required
-          aria-required="true"
-          className="px-6 py-2 border border-gray-300 rounded-full"
-        />
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
+        <div className="flex flex-col sm:flex-row lg:flex-col space-y-6 sm:space-y-0 lg:space-y-6 sm:space-x-4 lg:space-x-0">
+          <input
+            type="text"
+            placeholder="Your name"
+            id="name"
+            required
+            aria-required="true"
+            className="px-6 py-2 border border-gray-300 rounded-full w-full"
+          />
+          <input
+            type="email"
+            placeholder="Your email address"
+            id="email"
+            required
+            aria-required="true"
+            className="px-6 py-2 border border-gray-300 rounded-full w-full"
+          />
+        </div>
         <button
           type="submit"
           className="bg-white py-2 px-4 rounded-full hover:bg-rose-100">
