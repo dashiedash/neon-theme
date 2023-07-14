@@ -11,7 +11,8 @@ import {
 } from "@/components/main/article";
 import { SocialLinks } from "@/components/main/social-links";
 import { AuthorCard } from "@/components/main/author";
-import { Tags, TagGroup, Newsletter } from "@/components/main/side";
+import { Tags, TagGroupMain, NewsletterMain } from "@/components/main/side";
+import Footer from "@/components/footer/footer";
 
 // Content
 const PostFullwidth = () => {
@@ -25,7 +26,10 @@ const PostFullwidth = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto">
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
+
       <main className="m-8">
         <div className="bg-neutral-50 p-4 drop-shadow-xl rounded-xl">
           <Image
@@ -208,12 +212,14 @@ const PostFullwidth = () => {
           {/* Sidebar */}
           <div className="container">
             <div className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8">
-              <TagGroup />
-              <Newsletter />
+              <TagGroupMain />
+              <NewsletterMain />
             </div>
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 };

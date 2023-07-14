@@ -53,7 +53,7 @@ export const Tags = (props: { tags: string[] }) => {
 };
 
 // Tag Group Component
-export const TagGroup = () => {
+export const TagGroupMain = () => {
   const post = [
     "Food",
     "Health",
@@ -86,7 +86,7 @@ export const TagGroup = () => {
 };
 
 // Newsletter Component
-export const Newsletter = () => {
+export const NewsletterMain = () => {
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
   };
