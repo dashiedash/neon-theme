@@ -53,13 +53,19 @@ const Footer = () => {
         <div className="container">
           <TagGroupMain />
           <div className="flex justify-between flex-wrap">
-            <a href="" className="mr-2 mb-2">
+            <a
+              href=""
+              className="mr-2 mb-2 hover:underline underline-offset-4 decoration-2 decoration-rose-500">
               Privacy Policy
             </a>
-            <a href="" className="mr-2 mb-2">
+            <a
+              href=""
+              className="mr-2 mb-2 hover:underline underline-offset-4 decoration-2 decoration-rose-500">
               Terms and Conditions
             </a>
-            <a href="" className="mr-2 mb-2">
+            <a
+              href=""
+              className="mr-2 mb-2 hover:underline underline-offset-4 decoration-2 decoration-rose-500">
               Contact
             </a>
           </div>

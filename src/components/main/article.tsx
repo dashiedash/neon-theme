@@ -8,7 +8,7 @@ export const ArticleHeader = ({ posts }: { posts: any }) => {
     if (authors.length > 1) {
       const lastAuthor = authors[authors.length - 1];
       const remainingAuthors = authors.slice(0, -1).join(", ");
-      return `${remainingAuthors}, & ${lastAuthor}`;
+      return `${remainingAuthors} & ${lastAuthor}`;
     }
     return authors[0];
   };
