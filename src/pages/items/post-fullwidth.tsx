@@ -25,13 +25,13 @@ const PostFullwidth = () => {
   });
 
   return (
-    <div className="max-w-screen-xl mx-auto">
-      <header>
+    <div className="">
+      <header className="max-w-screen-xl mx-auto">
         <NavBar />
       </header>
 
-      <main className="m-8">
-        <div className="bg-neutral-50 p-4 drop-shadow-xl rounded-xl">
+      <main className="mx-8 my-8 max-w-screen-xl mx-4">
+        <div className="bg-white p-4 drop-shadow-xl rounded-xl">
           <Image
             src="/jpeg/photo-ship.jpg"
             alt=""
@@ -44,7 +44,7 @@ const PostFullwidth = () => {
         <div className="container grid lg:grid-cols-3 gap-x-8">
           {/* Main Content */}
           <div className="container lg:col-span-2">
-            <article className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8">
+            <article className="bg-white p-8 drop-shadow-xl rounded-xl my-8">
               <Tags tags={post.tags} />
               <ArticleHeader posts={post} />
               <p className="mb-5">
@@ -183,16 +183,19 @@ const PostFullwidth = () => {
               </section>
             </article>
 
-            <SocialLinks
-              size={25}
-              facebook="https://www.facebook.com/sharer/sharer.php?u=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/"
-              twitter="https://twitter.com/share?text=Never%20let%20your%20memories%20be%20greater%20than%20your%20dreams&url=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/"
-              pinterest="http://pinterest.com/pin/create/button/?url=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/&media=https://images.unsplash.com/photo-1513436539083-9d2127e742f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI5fHxkcmVhbXxlbnwwfHx8fDE2NzE0MzA3MTU&ixlib=rb-4.0.3&q=80&w=2000&description=Never%20let%20your%20memories%20be%20greater%20than%20your%20dreams"
-              whatsapp="whatsapp://send?text=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/"
-              linkedin="http://www.linkedin.com/shareArticle?mini=true&url=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/&title=Never%20let%20your%20memories%20be%20greater%20than%20your%20dreams"
-              mail="test"
-              website="https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/#"
-            />
+            <section className="bg-white text-center p-10 drop-shadow-xl rounded-xl my-8">
+              <h2 className="text-lg font-bold">Share this article:</h2>
+              <SocialLinks
+                size={25}
+                facebook="https://www.facebook.com/sharer/sharer.php?u=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/"
+                twitter="https://twitter.com/share?text=Never%20let%20your%20memories%20be%20greater%20than%20your%20dreams&url=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/"
+                pinterest="http://pinterest.com/pin/create/button/?url=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/&media=https://images.unsplash.com/photo-1513436539083-9d2127e742f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI5fHxkcmVhbXxlbnwwfHx8fDE2NzE0MzA3MTU&ixlib=rb-4.0.3&q=80&w=2000&description=Never%20let%20your%20memories%20be%20greater%20than%20your%20dreams"
+                whatsapp="whatsapp://send?text=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/"
+                linkedin="http://www.linkedin.com/shareArticle?mini=true&url=https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/&title=Never%20let%20your%20memories%20be%20greater%20than%20your%20dreams"
+                mail="test"
+                website="https://neon.gbjsolution.com/never-let-your-memories-be-greater-than-your-dreams/#"
+              />
+            </section>
 
             <AuthorCard
               image="/jpeg/apurba-talukdar.jpg"
@@ -211,7 +214,7 @@ const PostFullwidth = () => {
 
           {/* Sidebar */}
           <div className="container">
-            <div className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8">
+            <div className="bg-white p-8 drop-shadow-xl rounded-xl my-8">
               <TagGroupMain />
               <NewsletterMain />
             </div>

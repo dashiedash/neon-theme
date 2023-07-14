@@ -13,7 +13,7 @@ export const AuthorCard = (props: {
   const desc = props.desc;
 
   return (
-    <div className="bg-neutral-50 p-8 drop-shadow-xl rounded-xl my-8 flex flex-col md:flex-row">
+    <div className="bg-white p-8 drop-shadow-xl rounded-xl my-8 flex flex-col md:flex-row">
       {/* Author Picture */}
       <div className="aspect-square h-40 mx-auto md:mx-5 my-4 relative">
         <Image
@@ -34,7 +34,7 @@ export const AuthorCard = (props: {
         <div className="my-2 flex justify-center md:justify-start flex-wrap space-x-3">
           {/* Location */}
           <Tooltip content={location} color="invert">
-            <a target="_blank" className="p-2 bg-neutral-200 rounded-full">
+            <a target="_blank" className="p-2 bg-neutral-100 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -60,7 +60,7 @@ export const AuthorCard = (props: {
           <a
             href=""
             target="_blank"
-            className="p-2 bg-neutral-200 rounded-full">
+            className="p-2 bg-neutral-100 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -73,7 +73,7 @@ export const AuthorCard = (props: {
           <a
             href=""
             target="_blank"
-            className="p-2 bg-neutral-200 rounded-full">
+            className="p-2 bg-neutral-100 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
@@ -86,7 +86,7 @@ export const AuthorCard = (props: {
           <a
             href=""
             target="_blank"
-            className="p-2 bg-neutral-200 rounded-full">
+            className="p-2 bg-neutral-100 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

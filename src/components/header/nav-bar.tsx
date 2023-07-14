@@ -9,7 +9,7 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="bg-neutral-50 drop-shadow-xl lg:max-w-screen-xl m-8 rounded-xl">
+    <nav className="bg-white drop-shadow-xl lg:max-w-screen-xl my-8 mx-4 rounded-xl">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">

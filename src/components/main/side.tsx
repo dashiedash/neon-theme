@@ -42,7 +42,7 @@ export const Tags = (props: { tags: string[] }) => {
         <a
           href={`#${tag}`}
           key={tag}
-          className="mr-3 text-sm py-2 px-4 rounded-full inline-flex items-center bg-neutral-200 space-x-1">
+          className="mr-3 text-sm py-2 px-4 rounded-full inline-flex items-center bg-neutral-100 space-x-1">
           <div
             className={`w-2 h-2 mr-2 rounded-full ${getTagColor(tag)} `}></div>
           {tag}
@@ -72,7 +72,7 @@ export const TagGroupMain = () => {
           <a
             href={`#${post}`}
             key={post}
-            className="mr-3 text-sm py-2 px-4 rounded-full inline-flex items-center bg-neutral-200 space-x-1">
+            className="mr-3 text-sm py-2 px-4 rounded-full inline-flex items-center bg-neutral-100 space-x-1">
             <div
               className={`w-2 h-2 mr-2 rounded-full ${getTagColor(
                 post
@@ -118,7 +118,7 @@ export const NewsletterMain = () => {
         />
         <button
           type="submit"
-          className="bg-neutral-50 py-2 px-4 rounded-full hover:bg-rose-100">
+          className="bg-white py-2 px-4 rounded-full hover:bg-rose-100">
           Subscribe
         </button>
       </form>
