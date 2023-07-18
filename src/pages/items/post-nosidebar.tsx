@@ -34,7 +34,7 @@ const PostNoSidebar = () => {
         <main className="mx-auto my-8 max-w-screen-xl">
           <div className="bg-white p-4 drop-shadow-xl rounded-xl">
             <Image
-              src="/jpeg/photo-ship.jpg"
+              src="/jpeg/photo-brush-red.jpg"
               alt=""
               width={1920}
               height={100}
@@ -68,6 +68,16 @@ const PostNoSidebar = () => {
                     moment when, drawn back by his screams, he rushed into the
                     glade? It was something terrible and deadly.
                   </p>
+                </div>
+
+                <ArticleImage
+                  imageSource="/jpeg/photo-olsson1.jpg"
+                  attribName="Ella Olsson"
+                  attribNameLink="https://unsplash.com/@ellaolsson?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                  attribSource="Unsplash"
+                  attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                />
+                <div className="">
                   <p className="mb-5">
                     What could it be? Might not the nature of the injuries
                     reveal something to my medical instincts? I rang the bell
@@ -80,14 +90,6 @@ const PostNoSidebar = () => {
                     have been struck from behind.
                   </p>
                 </div>
-
-                <ArticleImage
-                  imageSource="/jpeg/photo-owens1.jpg"
-                  attribName="Jakob Owens"
-                  attribNameLink="https://unsplash.com/@jakobowens1?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                  attribSource="Unsplash"
-                  attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                />
               </article>
 
               <section className="bg-white text-center p-10 drop-shadow-xl rounded-xl my-8">
