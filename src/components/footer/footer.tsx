@@ -10,6 +10,7 @@ import React from "react";
 import { NewsletterFooter } from "./footercomp";
 import { SocialLinks } from "../main/social-links";
 import { TagGroupMain } from "../main/side";
+import { BackToTop } from "@/components/navigation/back-to-top";
 
 /*
 --------------
@@ -70,10 +71,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="container sm:col-span-2 md:col-span-3">
+        <div className="container flex items-center flex-wrap justify-between sm:col-span-2 md:col-span-3">
           <p className="text-sm">
             &copy;2023 Neon - All right Reserved. Proudly Published with Ghost
           </p>
+          <BackToTop />
         </div>
       </div>
     </footer>
