@@ -10,7 +10,7 @@ import React from "react";
 import { NewsletterFooter } from "./footercomp";
 import { SocialLinks } from "../main/social-links";
 import { TagGroupMain } from "../main/side";
-import { BackToTop } from "@/components/navigation/back-to-top";
+import BackToTop from "@/components/navigation/back-to-top";
 
 /*
 --------------
