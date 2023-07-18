@@ -101,7 +101,7 @@ export const ArticleImage = ({
   imageSource: string;
 }) => {
   return (
-    <figure className="mt-4 mb-8">
+    <figure className="my-16">
       <Image
         src={imageSource}
         alt=""
