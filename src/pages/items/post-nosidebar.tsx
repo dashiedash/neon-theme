@@ -47,7 +47,7 @@ const PostNoSidebar = () => {
             {/* Main Content */}
             <div className="max-w-screen-lg mx-auto">
               <article className="bg-white p-8 drop-shadow-xl rounded-xl my-8">
-                <div className="sm:mx-20">
+                <div className="lg:mx-20">
                   <Tags tags={post.tags} />
                   <ArticleHeader posts={post} />
                   <p className="mb-5">
@@ -112,7 +112,7 @@ const PostNoSidebar = () => {
                   </p>
                 </section>
 
-                <section className="sm:mx-20">
+                <section className="md:mx-20">
                   <h2 className="text-2xl font-bold mt-7 mb-3">
                     You don&rsquo;t come into cooking to get rich
                   </h2>
@@ -180,7 +180,7 @@ const PostNoSidebar = () => {
                   attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                 />
 
-                <section className="sm:mx-20">
+                <section className="md:mx-20">
                   <p className="mb-5">
                     &ldquo;Ah, thereby hangs a rather painful tale. This fellow
                     is madly, insanely, in love with her, but some two years
@@ -194,7 +194,11 @@ const PostNoSidebar = () => {
                     impossible.
                   </p>
 
-                  <ExternalArticle />
+                  <ExternalArticle
+                    url="https://saima.gbjsolution.com/believe-in-your-cooking-skills-but-never-stop-improving/"
+                    source="Saima Gal"
+                    author="Apurba Talukdar"
+                  />
 
                   <p className="mb-5">
                     It was sheer frenzy of this sort which made him throw his
