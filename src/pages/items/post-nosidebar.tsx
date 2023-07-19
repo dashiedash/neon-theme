@@ -221,17 +221,10 @@ const PostNoSidebar = () => {
               </section>
 
               <AuthorCard
-                image="/jpeg/apurba-talukdar.jpg"
-                name="Apurba Talukdar"
-                location="Bangalore"
-                desc="Apurba is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover."
-              />
-
-              <AuthorCard
-                image="/jpeg/ishan-sharma.jpg"
-                name="Ishan Sharma"
-                location="Delhi"
-                desc="Ishan is back end developer by profession and writer by passion. He writes science fiction novels and short story mostly for children. He is the always smiling person."
+                image="/jpeg/biswajit-saha.jpeg"
+                name="Biswajit Saha"
+                location="Kolkata"
+                desc="Biswajit Saha is a very simple person. He likes to ride a bicycle when free. Prefers tea over coffee. He is currently writing code at gbjsolution.com"
               />
             </div>
           </div>
