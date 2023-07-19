@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import Image from "next/image";
 
@@ -133,21 +134,57 @@ export const ArticleImage = ({
 };
 
 // External Article Card
-export const ExternalArticle = () => {
+export const ExternalArticle = ({
+  url,
+  source,
+  author,
+}: {
+  url: string;
+  source: string;
+  author: string;
+}) => {
+  const [title, setTitle] = useState("Loading...");
+  const [firstParagraph, setFirstParagraph] = useState("");
+
+  useEffect(() => {
+    const fetchTitleAndParagraph = async () => {
+      try {
+        const response = await fetch(url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        // Fetch Title
+        const title = doc.querySelector("h1")?.textContent;
+        setTitle(title || "Default Title");
+
+        // Fetch First Paragraph
+        const firstParagraph = doc.querySelector("p")?.textContent;
+        setFirstParagraph(firstParagraph || "");
+      } catch (error) {
+        console.error("Error fetching external page:", error);
+        setTitle("Default Title");
+        setFirstParagraph("");
+      }
+    };
+
+    fetchTitleAndParagraph();
+  }, [url]);
+
   return (
     <>
-      <a href="">
-        <div className="drop-shadow-xl border bg-white my-16 rounded-xl p-4 flex flex-col-reverse">
+      <a href={url} target="_blank">
+        <div className="drop-shadow-xl border bg-white my-16 rounded-xl p-4 flex flex-col-reverse md:flex-row">
           <div className="m-4">
-            <h3 className="font-semibold mb-4">
-              The quick brown fox jumps over the lazy dog
-            </h3>
-
-            <p className="mb-4">The quick brown fox jumps over the lazy dog.</p>
-
-            <p className="text-sm">Saima Gul ・ Apurba Talukdar</p>
+            <h3 className="font-semibold mb-4">{title}</h3>
+            {/* Paragraph with Line Clamp */}
+            <p className="mb-4 text-sm max-h-16 overflow-hidden line-clamp-2">
+              {firstParagraph}
+            </p>
+            <p className="text-sm font-medium">
+              {source} ・ {author}
+            </p>
           </div>
-
           <div className="">
             <Image
               src="/jpeg/photo-ext1.jpg"
