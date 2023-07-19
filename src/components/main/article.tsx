@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 // Article Header
@@ -134,8 +135,30 @@ export const ArticleImage = ({
 // External Article Card
 export const ExternalArticle = () => {
   return (
-    <div className="drop-shadow-xl border bg-white my-16 rounded-xl p-8">
-      <p>Hello, world!</p>
-    </div>
+    <>
+      <a href="">
+        <div className="drop-shadow-xl border bg-white my-16 rounded-xl p-4 flex flex-col-reverse">
+          <div className="m-4">
+            <h3 className="font-semibold mb-4">
+              The quick brown fox jumps over the lazy dog
+            </h3>
+
+            <p className="mb-4">The quick brown fox jumps over the lazy dog.</p>
+
+            <p className="text-sm">Saima Gul ・ Apurba Talukdar</p>
+          </div>
+
+          <div className="">
+            <Image
+              src="/jpeg/photo-ext1.jpg"
+              alt=""
+              width={1920}
+              height={400}
+              className="rounded-xl w-128 object-cover aspect-video"
+            />
+          </div>
+        </div>
+      </a>
+    </>
   );
 };
