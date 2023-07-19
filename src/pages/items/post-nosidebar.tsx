@@ -8,10 +8,11 @@ import {
   ArticleHeader,
   ArticleQuoteBlock,
   ArticleImage,
+  ExternalArticle,
 } from "@/components/main/article";
 import { SocialLinks } from "@/components/main/social-links";
 import { AuthorCard } from "@/components/main/author";
-import { Tags, TagGroupMain, NewsletterMain } from "@/components/main/side";
+import { Tags } from "@/components/main/side";
 import Footer from "@/components/footer/footer";
 
 // Content
@@ -192,6 +193,8 @@ const PostNoSidebar = () => {
                     give his very eyes to do, but what he knows to be absolutely
                     impossible.
                   </p>
+
+                  <ExternalArticle />
 
                   <p className="mb-5">
                     It was sheer frenzy of this sort which made him throw his

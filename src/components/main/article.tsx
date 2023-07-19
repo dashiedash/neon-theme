@@ -130,3 +130,12 @@ export const ArticleImage = ({
     </figure>
   );
 };
+
+// External Article Card
+export const ExternalArticle = () => {
+  return (
+    <div className="drop-shadow-xl border bg-white my-16 rounded-xl p-8">
+      <p>Hello, world!</p>
+    </div>
+  );
+};
