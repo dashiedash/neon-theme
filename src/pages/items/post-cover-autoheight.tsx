@@ -1,6 +1,5 @@
 // Utilities
 import { useState } from "react";
-import Image from "next/image";
 
 // Components
 import { NavBar } from "@/components/header/nav-bar";
@@ -8,6 +7,7 @@ import {
   ArticleHeader,
   ArticleQuoteBlock,
   ArticleImage,
+  ExternalArticle,
 } from "@/components/main/article";
 import { SocialLinks } from "@/components/main/social-links";
 import { AuthorCard } from "@/components/main/author";
@@ -117,14 +117,21 @@ const PostFullwidth = () => {
                   </h2>
 
                   <p className="mb-5">
-                    He might see a reason for his friend&rsquo;s strange preference or
-                    bondage (call it which you please) and even for the
-                    startling clause of the will. At least it would be a face
-                    worth seeing: the face of a man who was without bowels of
-                    mercy: a face which had but to show itself to raise up, in
-                    the mind of the unimpressionable Enfield, a spirit of
+                    He might see a reason for his friend&rsquo;s strange
+                    preference or bondage (call it which you please) and even
+                    for the startling clause of the will. At least it would be a
+                    face worth seeing: the face of a man who was without bowels
+                    of mercy: a face which had but to show itself to raise up,
+                    in the mind of the unimpressionable Enfield, a spirit of
                     enduring hatred.
                   </p>
+
+                  <ExternalArticle
+                    url="https://viox.gbjsolution.com/with-age-comes-wisdom-with-travel-comes-understanding/"
+                    image="/jpeg/photo-1468434453985-b1ca3b555f00.jpg"
+                    source="Viox"
+                    author="Apurba Talukdar"
+                  />
                 </section>
 
                 <section>

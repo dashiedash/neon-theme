@@ -138,10 +138,12 @@ export const ExternalArticle = ({
   url,
   source,
   author,
+  image,
 }: {
   url: string;
   source: string;
   author: string;
+  image: string;
 }) => {
   const [title, setTitle] = useState("Loading...");
   const [firstParagraph, setFirstParagraph] = useState("");
@@ -156,15 +158,15 @@ export const ExternalArticle = ({
 
         // Fetch Title
         const title = doc.querySelector("h1")?.textContent;
-        setTitle(title || "Default Title");
+        setTitle(title || "Insert Title Here");
 
         // Fetch First Paragraph
         const firstParagraph = doc.querySelector("p")?.textContent;
         setFirstParagraph(firstParagraph || "");
       } catch (error) {
         console.error("Error fetching external page:", error);
-        setTitle("Default Title");
-        setFirstParagraph("");
+        setTitle("Insert Title Here");
+        setFirstParagraph("Insert Paragraph Here");
       }
     };
 
@@ -187,7 +189,7 @@ export const ExternalArticle = ({
           </div>
           <div className="">
             <Image
-              src="/jpeg/photo-ext1.jpg"
+              src={image}
               alt=""
               width={1920}
               height={400}
