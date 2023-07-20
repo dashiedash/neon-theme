@@ -83,7 +83,7 @@ export const ArticleHeader = ({ posts }: { posts: any }) => {
 export const ArticleQuoteBlock = ({ quote }: { quote: any }) => {
   return (
     <div className="px-5 border-l-4 border-rose-500 my-16">
-      <blockquote className="text-lg font-medium">{quote}</blockquote>
+      <blockquote className="text-xl">{quote}</blockquote>
     </div>
   );
 };
@@ -103,7 +103,7 @@ export const ArticleImage = ({
   imageSource: string;
 }) => {
   return (
-    <figure className="my-16">
+    <figure>
       <Image
         src={imageSource}
         alt=""

@@ -17,9 +17,9 @@ import Footer from "@/components/footer/footer";
 // Content
 const PostFullwidth = () => {
   const [post, setPost] = useState({
-    title: "Never let your memories be greater than your dreams",
-    author: ["Apurba Talukdar", "Ishan Sharma"],
-    publishDate: "May 2, 2022",
+    title: "Stop worrying about the potholes in the road and enjoy the journey",
+    author: ["Apurba Talukdar"],
+    publishDate: "Oct 20, 2021",
     readTime: "4 min read",
     tags: ["Travel"],
   });
@@ -37,79 +37,94 @@ const PostFullwidth = () => {
             <div className="lg:col-span-2">
               <article className="bg-white p-8 drop-shadow-xl rounded-xl my-8">
                 <div className="mb-8">
-                  <Image
-                    src="/jpeg/photo-ship.jpg"
-                    alt=""
-                    width={1920}
-                    height={1920}
-                    className="rounded-xl md:max-h-96 object-cover"
+                  <ArticleImage
+                    imageSource="/jpeg/photo-surface1.jpg"
+                    attribName="Surface"
+                    attribNameLink="https://unsplash.com/@surface?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                    attribSource="Unsplash"
+                    attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                   />
                 </div>
+
                 <Tags tags={post.tags} />
                 <ArticleHeader posts={post} />
                 <p className="mb-5">
-                  Before long the searchlight discovered some distance away a
-                  schooner with all sails set, apparently the same vessel which
-                  had been noticed earlier in the evening. The wind had by this
-                  time backed to the east, and there was a shudder amongst the
-                  watchers on the cliff as they realized the terrible danger in
-                  which she now was. Between her and the port lay the great flat
-                  reef on which so many good ships have from time to time
-                  suffered, and, with the wind blowing from its present quarter,
-                  it would be quite impossible that she should fetch the
-                  entrance of the harbour.
+                  Six o&rsquo;clock struck on the bells of the church that was
+                  so conveniently near to Mr. Utterson&rsquo;s dwelling, and
+                  still he was digging at the problem. Hitherto it had touched
+                  him on the intellectual side alone; but now his imagination
+                  also was engaged, or rather enslaved; and as he lay and tossed
+                  in the gross darkness of the night and the curtained room, Mr.
+                  Enfield&rsquo;s tale went by before his mind in a scroll of
+                  lighted pictures.
+                </p>
+
+                <div className="my-8">
+                  <ArticleImage
+                    imageSource="/jpeg/photo-nevozhai1.jpg"
+                    attribName="Denis Nevozhai"
+                    attribNameLink="https://unsplash.com/@dnevozhai?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                    attribSource="Unsplash"
+                    attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                  />
+                </div>
+
+                <p className="mb-5">
+                  He would be aware of the great field of lamps of a nocturnal
+                  city; then of the figure of a man walking swiftly; then of a
+                  child running from the doctor&rsquo;s; and then these met, and
+                  that human Juggernaut trod the child down and passed on
+                  regardless of her screams.
                 </p>
 
                 <section>
                   <h2 className="text-2xl font-bold mt-7 mb-3">
-                    Wherever you go, go with all your heart
+                    Travel with no regrets
                   </h2>
                   <p className="mb-5">
-                    It was now nearly the hour of high tide, but the waves were
-                    so great that in their troughs the shallows of the shore
-                    were almost visible, and the schooner, with all sails set,
-                    was rushing with such speed that, in the words of one old
-                    salt, &#8220;she must fetch up somewhere, if it was only in
-                    hell.
+                    Or else he would see a room in a rich house, where his
+                    friend lay asleep, dreaming and smiling at his dreams; and
+                    then the door of that room would be opened, the curtains of
+                    the bed plucked apart, the sleeper recalled, and lo! there
+                    would stand by his side a figure to whom power was given,
+                    and even at that dead hour, he must rise and do its bidding.
                   </p>
 
-                  <ArticleImage
-                    imageSource="/jpeg/photo-owens1.jpg"
-                    attribName="Jakob Owens"
-                    attribNameLink="https://unsplash.com/@jakobowens1?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                    attribSource="Unsplash"
-                    attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                  />
+                  <ArticleQuoteBlock quote="Life begins at the end of your comfort zone" />
 
                   <p className="mb-5">
-                    Then came another rush of sea-fog, greater than any
-                    hitherto--a mass of dank mist, which seemed to close on all
-                    things like a grey pall, and left available to men only the
-                    organ of hearing, for the roar of the tempest, and the crash
-                    of the thunder, and the booming of the mighty billows came
-                    through the damp oblivion even louder than before.
+                    The figure in these two phases haunted the lawyer all night;
+                    and if at any time he dozed over, it was but to see it glide
+                    more stealthily through sleeping houses, or move the more
+                    swiftly and still the more swiftly, even to dizziness,
+                    through wider labyrinths of lamplighted city, and at every
+                    street corner crush a child and leave her screaming. And
+                    still the figure had no face by which he might know it; even
+                    in his dreams, it had no face, or one that baffled him and
+                    melted before his eyes; and thus it was that there sprang up
+                    and grew apace in the lawyer&rsquo;s mind a singularly
+                    strong, almost an inordinate, curiosity to behold the
+                    features of the real Mr. Hyde. If he could but once set eyes
+                    on him, he thought the mystery would lighten and perhaps
+                    roll altogether away, as was the habit of mysterious things
+                    when well examined.
                   </p>
+                </section>
 
-                  <ArticleQuoteBlock quote="A mind that is stretched by a new experience can never go back to its old dimensions" />
+                <section>
+                  <h2 className="text-2xl font-bold mt-7 mb-3">
+                    Leave yourself behind
+                  </h2>
 
                   <p className="mb-5">
-                    The rays of the searchlight were kept fixed on the harbour
-                    mouth across the East Pier, where the shock was expected,
-                    and men waited breathless. The wind suddenly shifted to the
-                    north-east, and the remnant of the sea-fog melted in the
-                    blast; and then, mirabile dictu, between the piers, leaping
-                    from wave to wave as it rushed at headlong speed, swept the
-                    strange schooner before the blast, with all sail set, and
-                    gained the safety of the harbour.
+                    He might see a reason for his friend&rsquo;s strange preference or
+                    bondage (call it which you please) and even for the
+                    startling clause of the will. At least it would be a face
+                    worth seeing: the face of a man who was without bowels of
+                    mercy: a face which had but to show itself to raise up, in
+                    the mind of the unimpressionable Enfield, a spirit of
+                    enduring hatred.
                   </p>
-
-                  <ArticleImage
-                    imageSource="/jpeg/photo-neill1.jpg"
-                    attribName="Austin Neill"
-                    attribNameLink="https://unsplash.com/@arstyy?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                    attribSource="Unsplash"
-                    attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                  />
                 </section>
 
                 <section>
