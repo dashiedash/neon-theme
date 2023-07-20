@@ -132,78 +132,118 @@ const PostFullwidth = () => {
                     source="Viox"
                     author="Apurba Talukdar"
                   />
+
+                  <p className="mb-5">
+                    From that time forward, Mr. Utterson began to haunt the door
+                    in the by-street of shops. In the morning before office
+                    hours, at noon when business was plenty, and time scarce, at
+                    night under the face of the fogged city moon, by all lights
+                    and at all hours of solitude or concourse, the lawyer was to
+                    be found on his chosen post.
+                  </p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-bold mt-7 mb-3">
-                    Life is short and the world is wide
+                    Climb the mountain so you can see the world
                   </h2>
-                  <ul className="list-disc ml-5 mb-5">
-                    <li className="mb-3">
-                      The searchlight followed her, and a shudder ran through
-                      all who saw her, for lashed to the helm was a corpse, with
-                      drooping head, which swung horribly to and fro at each
-                      motion of the ship.
+
+                  <p className="mb-5">
+                    And at last his patience was rewarded. It was a fine dry
+                    night; frost in the air; the streets as clean as a ballroom
+                    floor; the lamps, unshaken by any wind, drawing a regular
+                    pattern of light and shadow. By ten o&rsquo;clock, when the
+                    shops were closed the by-street was very solitary and, in
+                    spite of the low growl of London from all round, very
+                    silent. Small sounds carried far; domestic sounds out of the
+                    houses were clearly audible on either side of the roadway;
+                    and the rumour of the approach of any passenger preceded him
+                    by a long time.
+                  </p>
+
+                  <div className="my-8">
+                    <ArticleImage
+                      imageSource="/jpeg/photo-ahmed1.jpg"
+                      attribName="Erol Ahmed"
+                      attribNameLink="https://unsplash.com/@erol?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                      attribSource="Unsplash"
+                      attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                    />
+                  </div>
+
+                  <ul className="list-disc ml-5 mb-5 space-y-2">
+                    <li>
+                      Mr. Utterson had been some minutes at his post, when he
+                      was aware of an odd light footstep drawing near.
                     </li>
 
-                    <li className="mb-3">
-                      No other form could be seen on deck at all. A great awe
-                      came on all as they realised that the ship, as if by a
-                      miracle, had found the harbour, unsteered save by the hand
-                      of a dead man! However, all took place more quickly than
-                      it takes to write these words.
+                    <li>
+                      In the course of his nightly patrols, he had long grown
+                      accustomed to the quaint effect with which the footfalls
+                      of a single person, while he is still a great way off,
+                      suddenly spring out distinct from the vast hum and clatter
+                      of the city.
                     </li>
 
-                    <li className="mb-3">
-                      The schooner paused not, but rushing across the harbour,
-                      pitched herself on that accumulation of sand and gravel
-                      washed by many tides and many storms into the south-east
-                      corner of the pier jutting under the East Cliff, known
-                      locally as Tate Hill Pier.
+                    <li>
+                      Yet his attention had never before been so sharply and
+                      decisively arrested; and it was with a strong,
+                      superstitious prevision of success that he withdrew into
+                      the entry of the court.
+                    </li>
+
+                    <li>
+                      The steps drew swiftly nearer, and swelled out suddenly
+                      louder as they turned the end of the street.
+                    </li>
+
+                    <li>
+                      The lawyer, looking forth from the entry, could soon see
+                      what manner of man he had to deal with.
+                    </li>
+
+                    <li>
+                      He was small and very plainly dressed and the look of him,
+                      even at that distance, went somehow strongly against the
+                      watcher&rsquo;s inclination.
                     </li>
                   </ul>
 
-                  <ArticleQuoteBlock quote="Without new experiences, something inside of us sleeps. The sleeper must awaken. – Frank Herbert" />
-
-                  <p className="mb-3">
-                    There was of course a considerable concussion as the vessel
-                    drove up on the sand heap. Every spar, rope, and stay was
-                    strained, and some of the &#8220;top-hammer&#8221; came
-                    crashing down. But, strangest of all, the very instant the
-                    shore was touched, an immense dog sprang up on deck from
-                    below, as if shot up by the concussion, and running forward,
-                    jumped from the bow on the sand.
+                  <p className="mb-5">
+                    Mr. Utterson stepped out and touched him on the shoulder as
+                    he passed. &ldquo;Mr. Hyde, I think?&ldquo;
                   </p>
 
-                  <ArticleImage
-                    imageSource="/jpeg/photo-tarampi1.jpg"
-                    attribName="Randy Tarampi"
-                    attribNameLink="https://unsplash.com/@randytarampi?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                    attribSource="Unsplash"
-                    attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                  />
-
-                  <p className="mb-3">
-                    Making straight for the steep cliff, where the churchyard
-                    hangs over the laneway to the East Pier so steeply that some
-                    of the flat tombstones--&#8220;thruff-steans&#8221; or
-                    &#8220;through-stones,&#8221; as they call them in the
-                    Whitby vernacular--actually project over where the
-                    sustaining cliff has fallen away, it disappeared in the
-                    darkness, which seemed intensified just beyond the focus of
-                    the searchlight.
+                  <p className="mb-5">
+                    Mr. Hyde shrank back with a hissing intake of the breath.
+                    But his fear was only momentary; and though he did not look
+                    the lawyer in the face, he answered coolly enough: “That is
+                    my name. What do you want?”
                   </p>
 
-                  <p className="mb-3">
-                    It so happened that there was no one at the moment on Tate
-                    Hill Pier, as all those whose houses are in close proximity
-                    were either in bed or were out on the heights above. Thus
-                    the coastguard on duty on the eastern side of the harbour,
-                    who at once ran down to the little pier, was the first to
-                    climb on board. The men working the searchlight, after
-                    scouring the entrance of the harbour without seeing
-                    anything, then turned the light on the derelict and kept it
-                    there.
+                  <div className="my-8">
+                    <ArticleImage
+                      imageSource="/jpeg/photo-crew1.jpg"
+                      attribName="Crew"
+                      attribNameLink="https://unsplash.com/@crew?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                      attribSource="Unsplash"
+                      attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                    />
+                  </div>
+
+                  <p className="mb-5">
+                    &ldquo;I see you are going in,&rdquo; returned the lawyer.
+                    &ldquo;I am an old friend of Dr. Jekyll&rsquo;s--Mr.
+                    Utterson of Gaunt Street--you must have heard of my name;
+                    and meeting you so conveniently, I thought you might admit
+                    me.&rdquo;
+                  </p>
+
+                  <p className="mb-5">
+                    &ldquo;You will not find Dr. Jekyll; he is from home,&rdquo;
+                    replied Mr. Hyde, blowing in the key. And then suddenly, but
+                    still without looking up, &ldquo;How did you know me?&rdquo;
+                    he asked.
                   </p>
                 </section>
               </article>
@@ -227,13 +267,6 @@ const PostFullwidth = () => {
                 name="Apurba Talukdar"
                 location="Bangalore"
                 desc="Apurba is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover."
-              />
-
-              <AuthorCard
-                image="/jpeg/ishan-sharma.jpg"
-                name="Ishan Sharma"
-                location="Delhi"
-                desc="Ishan is back end developer by profession and writer by passion. He writes science fiction novels and short story mostly for children. He is the always smiling person."
               />
             </div>
 
