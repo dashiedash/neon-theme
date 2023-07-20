@@ -198,6 +198,7 @@ const PostNoSidebar = () => {
                     url="https://saima.gbjsolution.com/believe-in-your-cooking-skills-but-never-stop-improving/"
                     source="Saima Gal"
                     author="Apurba Talukdar"
+                    image="/jpeg/photo-ext1.jpg"
                   />
 
                   <p className="mb-5">
