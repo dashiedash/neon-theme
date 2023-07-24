@@ -17,11 +17,11 @@ import Footer from "@/components/footer/footer";
 // Content
 const PostCoverAutoHeight = () => {
   const [post, setPost] = useState({
-    title: "Stop worrying about the potholes in the road and enjoy the journey",
-    author: ["Apurba Talukdar"],
-    publishDate: "Oct 20, 2021",
+    title: "Self-observation is the first step of inner unfolding",
+    author: ["Biswajit Saha"],
+    publishDate: "May 2, 2022",
     readTime: "4 min read",
-    tags: ["Travel"],
+    tags: ["Lifestyle"],
   });
 
   return (
@@ -38,9 +38,9 @@ const PostCoverAutoHeight = () => {
               <article className="bg-white p-8 drop-shadow-xl rounded-xl my-8">
                 <div className="mb-8">
                   <ArticleImage
-                    imageSource="/jpeg/photo-surface1.jpg"
-                    attribName="Surface"
-                    attribNameLink="https://unsplash.com/@surface?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                    imageSource="/jpeg/photo-balland1.jpg"
+                    attribName="Mael BALLAND"
+                    attribNameLink="https://unsplash.com/@mael_balland?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                     attribSource="Unsplash"
                     attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                   />
@@ -49,14 +49,14 @@ const PostCoverAutoHeight = () => {
                 <Tags tags={post.tags} />
                 <ArticleHeader posts={post} />
                 <p className="mb-5">
-                  Six o&rsquo;clock struck on the bells of the church that was
-                  so conveniently near to Mr. Utterson&rsquo;s dwelling, and
-                  still he was digging at the problem. Hitherto it had touched
-                  him on the intellectual side alone; but now his imagination
-                  also was engaged, or rather enslaved; and as he lay and tossed
-                  in the gross darkness of the night and the curtained room, Mr.
-                  Enfield&rsquo;s tale went by before his mind in a scroll of
-                  lighted pictures.
+                  Almost instantly the whole truth of the transaction seemed to
+                  rush upon her mind, and her wrath was inconceivably violent.
+                  She asked me a thousand questions in a breath; but,
+                  fortunately, was too vehement to attend to my embarrassment,
+                  which must otherwise have betrayed my knowledge of the deceit.
+                  Revenge was her first wish; and she vowed she would go the
+                  next morning to Justice Fielding, and inquire what punishment
+                  she might lawfully inflict upon the Captain for his assault.
                 </p>
 
                 <div className="my-8">
@@ -70,180 +70,243 @@ const PostCoverAutoHeight = () => {
                 </div>
 
                 <p className="mb-5">
-                  He would be aware of the great field of lamps of a nocturnal
-                  city; then of the figure of a man walking swiftly; then of a
-                  child running from the doctor&rsquo;s; and then these met, and
-                  that human Juggernaut trod the child down and passed on
-                  regardless of her screams.
+                  I believe we were an hour at Bishopsgate Street before poor
+                  Madame Duval could allow any thing to be mentioned but her own
+                  story; at any length, however, Mr. Branghton told her, that M.
+                  Du Bois, and all his own family, were waiting for her at his
+                  house. A hackney-coach was then called, and we proceeded to
+                  Snow Hill.
                 </p>
 
                 <section>
-                  <h2 className="text-2xl font-bold mt-7 mb-3">
-                    Travel with no regrets
+                  <h2 className="text-3xl font-bold mt-7 mb-3">
+                    I&rsquo;ll never forget my father&rsquo;s advice
                   </h2>
                   <p className="mb-5">
-                    Or else he would see a room in a rich house, where his
-                    friend lay asleep, dreaming and smiling at his dreams; and
-                    then the door of that room would be opened, the curtains of
-                    the bed plucked apart, the sleeper recalled, and lo! there
-                    would stand by his side a figure to whom power was given,
-                    and even at that dead hour, he must rise and do its bidding.
+                    Mr. Branghton&rsquo;s house is small and inconvenient;
+                    though his shop, which takes in all the ground floor, is
+                    large and commodious. I believe I told you before, that he
+                    is a silver-smith.
                   </p>
 
-                  <ArticleQuoteBlock quote="Life begins at the end of your comfort zone" />
-
-                  <p className="mb-5">
-                    The figure in these two phases haunted the lawyer all night;
-                    and if at any time he dozed over, it was but to see it glide
-                    more stealthily through sleeping houses, or move the more
-                    swiftly and still the more swiftly, even to dizziness,
-                    through wider labyrinths of lamplighted city, and at every
-                    street corner crush a child and leave her screaming. And
-                    still the figure had no face by which he might know it; even
-                    in his dreams, it had no face, or one that baffled him and
-                    melted before his eyes; and thus it was that there sprang up
-                    and grew apace in the lawyer&rsquo;s mind a singularly
-                    strong, almost an inordinate, curiosity to behold the
-                    features of the real Mr. Hyde. If he could but once set eyes
-                    on him, he thought the mystery would lighten and perhaps
-                    roll altogether away, as was the habit of mysterious things
-                    when well examined.
-                  </p>
-                </section>
-
-                <section>
-                  <h2 className="text-2xl font-bold mt-7 mb-3">
-                    Leave yourself behind
-                  </h2>
-
-                  <p className="mb-5">
-                    He might see a reason for his friend&rsquo;s strange
-                    preference or bondage (call it which you please) and even
-                    for the startling clause of the will. At least it would be a
-                    face worth seeing: the face of a man who was without bowels
-                    of mercy: a face which had but to show itself to raise up,
-                    in the mind of the unimpressionable Enfield, a spirit of
-                    enduring hatred.
-                  </p>
-
-                  <ExternalArticle
-                    url="https://viox.gbjsolution.com/with-age-comes-wisdom-with-travel-comes-understanding/"
-                    image="/jpeg/photo-1468434453985-b1ca3b555f00.jpg"
-                    source="Viox"
-                    author="Apurba Talukdar"
-                  />
-
-                  <p className="mb-5">
-                    From that time forward, Mr. Utterson began to haunt the door
-                    in the by-street of shops. In the morning before office
-                    hours, at noon when business was plenty, and time scarce, at
-                    night under the face of the fogged city moon, by all lights
-                    and at all hours of solitude or concourse, the lawyer was to
-                    be found on his chosen post.
-                  </p>
-                </section>
-
-                <section>
-                  <h2 className="text-2xl font-bold mt-7 mb-3">
-                    Climb the mountain so you can see the world
-                  </h2>
-
-                  <p className="mb-5">
-                    And at last his patience was rewarded. It was a fine dry
-                    night; frost in the air; the streets as clean as a ballroom
-                    floor; the lamps, unshaken by any wind, drawing a regular
-                    pattern of light and shadow. By ten o&rsquo;clock, when the
-                    shops were closed the by-street was very solitary and, in
-                    spite of the low growl of London from all round, very
-                    silent. Small sounds carried far; domestic sounds out of the
-                    houses were clearly audible on either side of the roadway;
-                    and the rumour of the approach of any passenger preceded him
-                    by a long time.
-                  </p>
-
-                  <div className="my-8">
-                    <ArticleImage
-                      imageSource="/jpeg/photo-ahmed1.jpg"
-                      attribName="Erol Ahmed"
-                      attribNameLink="https://unsplash.com/@erol?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                      attribSource="Unsplash"
-                      attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
-                    />
-                  </div>
+                  <ArticleQuoteBlock quote="Inspiration is a message from your unconscious wisdom telling you to go out there and be the fullest, most positive expression of you who you REALLY are" />
 
                   <ul className="list-disc ml-5 mb-5 space-y-2">
                     <li>
-                      Mr. Utterson had been some minutes at his post, when he
-                      was aware of an odd light footstep drawing near.
+                      We were conducted up two pairs of stairs: for the
+                      dining-room, Mr. Branghton told us, was let. His two
+                      daughters, their brother, M. Du Bois, and a young man,
+                      were at tea.
                     </li>
 
                     <li>
-                      In the course of his nightly patrols, he had long grown
-                      accustomed to the quaint effect with which the footfalls
-                      of a single person, while he is still a great way off,
-                      suddenly spring out distinct from the vast hum and clatter
-                      of the city.
+                      They had waited some time for Madame Duval, but I found
+                      they had not any expectation that I should accompany her;
+                      and the young ladies.
                     </li>
 
                     <li>
-                      Yet his attention had never before been so sharply and
-                      decisively arrested; and it was with a strong,
-                      superstitious prevision of success that he withdrew into
-                      the entry of the court.
+                      I believe, were rather more surprised than pleased when I
+                      made my appearance; for they seemed hurt that I should see
+                      their apartment.
                     </li>
 
                     <li>
-                      The steps drew swiftly nearer, and swelled out suddenly
-                      louder as they turned the end of the street.
-                    </li>
-
-                    <li>
-                      The lawyer, looking forth from the entry, could soon see
-                      what manner of man he had to deal with.
-                    </li>
-
-                    <li>
-                      He was small and very plainly dressed and the look of him,
-                      even at that distance, went somehow strongly against the
-                      watcher&rsquo;s inclination.
+                      Indeed, I would willingly have saved them that pain, had
+                      it been in my power.
                     </li>
                   </ul>
 
-                  <p className="mb-5">
-                    Mr. Utterson stepped out and touched him on the shoulder as
-                    he passed. &ldquo;Mr. Hyde, I think?&ldquo;
-                  </p>
-
-                  <p className="mb-5">
-                    Mr. Hyde shrank back with a hissing intake of the breath.
-                    But his fear was only momentary; and though he did not look
-                    the lawyer in the face, he answered coolly enough: “That is
-                    my name. What do you want?”
-                  </p>
-
                   <div className="my-8">
                     <ArticleImage
-                      imageSource="/jpeg/photo-crew1.jpg"
-                      attribName="Crew"
-                      attribNameLink="https://unsplash.com/@crew?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                      imageSource="/jpeg/photo-mars1.jpg"
+                      attribName="bruce mars"
+                      attribNameLink="https://unsplash.com/@brucemars?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                       attribSource="Unsplash"
                       attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                     />
                   </div>
 
                   <p className="mb-5">
-                    &ldquo;I see you are going in,&rdquo; returned the lawyer.
-                    &ldquo;I am an old friend of Dr. Jekyll&rsquo;s--Mr.
-                    Utterson of Gaunt Street--you must have heard of my name;
-                    and meeting you so conveniently, I thought you might admit
-                    me.&rdquo;
+                    The first person who saw me was M. Du Bois, &ldquo;Ah, mon
+                    Dieu!&rdquo; exclaimed he, &ldquo;voila Mademoiselle!&rdquo;
                   </p>
 
                   <p className="mb-5">
-                    &ldquo;You will not find Dr. Jekyll; he is from home,&rdquo;
-                    replied Mr. Hyde, blowing in the key. And then suddenly, but
-                    still without looking up, &ldquo;How did you know me?&rdquo;
-                    he asked.
+                    &ldquo;Goodness,&rdquo; cried young Branghton, &ldquo;if
+                    there isn&lsquo;t Miss!&rdquo;
+                  </p>
+
+                  <p className="mb-5">
+                    &ldquo;Lord, so there is!&rdquo; said Miss Polly;
+                    &ldquo;well, I&rsquo;m sure I should never have dreamed of
+                    Miss&rsquo;s coming.&rdquo;
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-3xl font-bold mt-7 mb-3">
+                    Quitters never win. Winners never quit!
+                  </h2>
+
+                  <p className="mb-5">
+                    &ldquo;Nor I neither, I&rsquo;m sure,&ldquo; cried Miss
+                    Branghton, &ldquo;or else I would not have been in this room
+                    to see her: I&rsquo;m quite ashamed about it;-only not
+                    thinking of seeing any body but my aunt-however, Tom,
+                    it&rsquo;s all your fault; for, you know very well I wanted
+                    to borrow Mr. Smith&rsquo;s room, only you were so grumpy
+                    you would not let me.&rdquo;
+                  </p>
+
+                  <div className="my-8">
+                    <ArticleImage
+                      imageSource="/jpeg/photo-freestocks1.jpg"
+                      attribName="freestocks.org"
+                      attribNameLink="https://unsplash.com/@freestocks?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                      attribSource="Unsplash"
+                      attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                    />
+                  </div>
+
+                  <p className="mb-5">
+                    &ldquo;Lord, what signifies?&rdquo; said her brother;
+                    &ldquo;I dare be sworn Miss has been up two pair of stairs
+                    before now;-ha&rsquo;n&rsquo;t you, Miss?&rdquo;
+                  </p>
+
+                  <p className="mb-5">
+                    I begged that I might not give them the least disturbance;
+                    and assured them that I had not any choice in regard to what
+                    room we sat in.
+                  </p>
+
+                  <p className="mb-5">
+                    &ldquo;Well,&rdquo; said Miss Polly, &ldquo;when you come
+                    next, Miss, we&rsquo;ll have Mr. Smith&rsquo;s room: and
+                    it&rsquo;s a very pretty one, and only up one pair of
+                    stairs, and nicely furnished, and every thing.&rdquo;
+                  </p>
+
+                  <section>
+                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                      Suspendisse iaculis rutrum felis, et cursus
+                    </h3>
+
+                    <p className="mb-5">
+                      Tellus vestibulum eget. Sed arcu sapien, porttitor at
+                      commodo eget, feugiat id turpis. Nam vitae ante vel augue
+                      sagittis consequat non vel tellus. Duis volutpat interdum
+                      lorem a sodales. Vestibulum condimentum lobortis quam non
+                      tincidunt. Fusce sed turpis id nisl porttitor imperdiet in
+                      ut magna.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                      Quisque quis est vitae mi elementum finibus
+                    </h3>
+
+                    <p className="mb-5">
+                      Nullam finibus laoreet tortor vel fringilla. Nam vel erat
+                      vel justo ornare aliquam vel et metus. Suspendisse
+                      convallis quis felis quis bibendum. Phasellus euismod
+                      lorem et iaculis molestie. Quisque sit amet augue quis
+                      ipsum molestie lobortis ut non felis. In hendrerit erat
+                      sed nulla luctus, et tincidunt lacus malesuada.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                      Donec efficitur massa nisi
+                    </h3>
+
+                    <p className="mb-5">
+                      At auctor risus tristique ac. Vestibulum tincidunt, eros a
+                      ultricies laoreet, velit tortor semper enim, et molestie
+                      mauris purus vel lectus. Orci varius natoque penatibus et
+                      magnis dis parturient montes, nascetur ridiculus mus. Nam
+                      egestas sem maximus vehicula commodo.
+                    </p>
+
+                    <p className="mb-5">
+                      Praesent pulvinar, metus vel malesuada tristique, felis
+                      tortor lacinia nisi, in ultrices velit sem nec enim. In
+                      massa nisl, pulvinar viverra elit non, aliquam pretium
+                      nulla. Sed non suscipit quam, non fermentum ligula
+                    </p>
+
+                    <p className="mb-5">
+                      Suspendisse volutpat metus eu sagittis iaculis. Mauris sit
+                      amet sapien sollicitudin, gravida lacus id, posuere
+                      sapien. Nam dictum orci nec ex semper, vel lacinia risus
+                      porttitor. Sed augue lorem, ornare ac imperdiet auctor,
+                      commodo ut urna. Mauris feugiat, dui in ultrices cursus,
+                      orci augue scelerisque turpis, id pulvinar lectus dui et
+                      neque.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                      Aenean luctus lorem nec orci rutrum vulputate
+                    </h3>
+
+                    <p className="mb-5">
+                      Mauris elit magna, congue id ante non, efficitur sodales
+                      lorem. Praesent at eros sed est gravida euismod non vitae
+                      massa.
+                    </p>
+
+                    <p className="mb-5">
+                      Morbi consectetur maximus nulla sed rhoncus. Vivamus
+                      hendrerit lectus tellus, lacinia sollicitudin nibh congue
+                      porta. Ut at ex neque. Phasellus aliquet venenatis
+                      consequat. Nam id nibh purus. Pellentesque aliquam ante eu
+                      ante ultrices, sed vestibulum nibh lacinia. Nunc vitae
+                      congue est, quis aliquam ipsum. Praesent elementum
+                      condimentum elit vitae sagittis. Nunc luctus rhoncus urna,
+                      sed rutrum lacus commodo vitae.
+                    </p>
+                  </section>
+                </section>
+
+                <section>
+                  <h2 className="text-3xl font-bold mt-7 mb-3">
+                    Maecenas sollicitudin euismod risus
+                  </h2>
+
+                  <p className="mb-5">
+                    Sit amet accumsan mi hendrerit vitae. Maecenas ornare eros
+                    id faucibus viverra. Nullam eu mauris at sapien sodales
+                    blandit sit amet in nulla.
+                  </p>
+
+                  <p className="mb-5">
+                    Aenean efficitur placerat massa, et congue dui facilisis
+                    eget. In pellentesque nunc quam, vulputate vestibulum purus
+                    mattis id. Suspendisse ut tempus felis. Vestibulum tempor
+                    lacinia varius. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+
+                  <p className="mb-5">
+                    In sodales ut diam nec molestie. Donec sit amet nisl odio.
+                    Ut fringilla est libero, eu mattis eros scelerisque
+                    faucibus. Sed ornare nisi laoreet eros tempus, auctor
+                    lacinia tellus varius. Sed pulvinar sem euismod, facilisis
+                    orci quis, imperdiet massa. Nam metus magna, suscipit quis
+                    lectus non, consequat rhoncus ipsum.
+                  </p>
+
+                  <p className="mb-5">
+                    Nunc sit amet laoreet ex. In hac habitasse platea dictumst.
+                    Cras vulputate, diam sed hendrerit pharetra, nisl felis
+                    viverra augue, sed suscipit nunc ante non sem. Nulla id
+                    ligula id ipsum hendrerit ornare vitae et metus. Donec in
+                    turpis vitae felis maximus faucibus.
                   </p>
                 </section>
               </article>
@@ -263,10 +326,10 @@ const PostCoverAutoHeight = () => {
               </section>
 
               <AuthorCard
-                image="/jpeg/apurba-talukdar.jpg"
-                name="Apurba Talukdar"
-                location="Bangalore"
-                desc="Apurba is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover."
+                image="/jpeg/biswajit-saha.jpeg"
+                name="Biswajit Saha"
+                location="Kolkata"
+                desc="Biswajit Saha is a very simple person. He likes to ride a bicycle when free. Prefers tea over coffee. He is currently writing code at gbjsolution.com"
               />
             </div>
 
