@@ -7,7 +7,7 @@ import {
   ArticleHeader,
   ArticleQuoteBlock,
   ArticleImage,
-  ExternalArticle,
+  TableOfContents,
 } from "@/components/main/article";
 import { SocialLinks } from "@/components/main/social-links";
 import { AuthorCard } from "@/components/main/author";
@@ -15,7 +15,7 @@ import { Tags, TagGroupMain, NewsletterMain } from "@/components/main/side";
 import Footer from "@/components/footer/footer";
 
 // Content
-const PostCoverAutoHeight = () => {
+const PostWithToc = () => {
   const [post, setPost] = useState({
     title: "Self-observation is the first step of inner unfolding",
     author: ["Biswajit Saha"],
@@ -23,6 +23,25 @@ const PostCoverAutoHeight = () => {
     readTime: "4 min read",
     tags: ["Lifestyle"],
   });
+
+  const headings = [
+    {
+      title: "I’ll never forget my father’s advice",
+      id: "ill-never-forget-my-fathers-advice",
+    },
+    {
+      title: "Quitters never win. Winners never quit!",
+      id: "quitters-never-win-winners-never-quit",
+    },
+    {
+      title: "Suspendisse iaculis rutrum felis, et cursus",
+      id: "suspendisse-iaculis-rutrum-felis-et-cursus",
+    },
+    {
+      title: "Quisque quis est vitae mi elementum finibus",
+      id: "quisque-quis-est-vitae-mi-elementum-finibus",
+    },
+  ];
 
   return (
     <>
@@ -47,7 +66,11 @@ const PostCoverAutoHeight = () => {
                 </div>
 
                 <Tags tags={post.tags} />
+
                 <ArticleHeader posts={post} />
+
+                <TableOfContents headings={headings} />
+
                 <p className="mb-5">
                   Almost instantly the whole truth of the transaction seemed to
                   rush upon her mind, and her wrath was inconceivably violent.
@@ -61,9 +84,9 @@ const PostCoverAutoHeight = () => {
 
                 <div className="my-8">
                   <ArticleImage
-                    imageSource="/jpeg/photo-nevozhai1.jpg"
-                    attribName="Denis Nevozhai"
-                    attribNameLink="https://unsplash.com/@dnevozhai?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
+                    imageSource="/jpeg/photo-dissel1.jpg"
+                    attribName="Austin Dissel"
+                    attribNameLink="https://unsplash.com/@austindistel?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                     attribSource="Unsplash"
                     attribSourceLink="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit"
                   />
@@ -79,7 +102,9 @@ const PostCoverAutoHeight = () => {
                 </p>
 
                 <section>
-                  <h2 className="text-3xl font-bold mt-7 mb-3">
+                  <h2
+                    className="text-3xl font-bold mt-7 mb-3"
+                    id="ill-never-forget-my-fathers-advice">
                     I&rsquo;ll never forget my father&rsquo;s advice
                   </h2>
                   <p className="mb-5">
@@ -145,7 +170,9 @@ const PostCoverAutoHeight = () => {
                 </section>
 
                 <section>
-                  <h2 className="text-3xl font-bold mt-7 mb-3">
+                  <h2
+                    className="text-3xl font-bold mt-7 mb-3"
+                    id="quitters-never-win-winners-never-quit">
                     Quitters never win. Winners never quit!
                   </h2>
 
@@ -189,7 +216,9 @@ const PostCoverAutoHeight = () => {
                   </p>
 
                   <section>
-                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                    <h3
+                      className="text-2xl font-bold mt-7 mb-3"
+                      id="suspendisse-iaculis-rutrum-felis-et-cursus">
                       Suspendisse iaculis rutrum felis, et cursus
                     </h3>
 
@@ -349,4 +378,4 @@ const PostCoverAutoHeight = () => {
   );
 };
 
-export default PostCoverAutoHeight;
+export default PostWithToc;

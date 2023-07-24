@@ -201,3 +201,23 @@ export const ExternalArticle = ({
     </>
   );
 };
+
+// Table of Contents
+interface TableOfContentsProps {
+  headings: { title: string; id: string }[];
+}
+
+export const TableOfContents: React.FC<TableOfContentsProps> = ({ headings }) => {
+  return (
+    <aside className="bg-white p-8 drop-shadow-xl rounded-xl my-8">
+      <h3 className="text-xl font-bold mb-4">Table of Contents</h3>
+      <ul className="space-y-2">
+        {headings.map((heading) => (
+          <li key={heading.id}>
+            <a href={`#${heading.id}`}>{heading.title}</a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+};
