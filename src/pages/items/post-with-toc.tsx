@@ -41,6 +41,18 @@ const PostWithToc = () => {
       title: "Quisque quis est vitae mi elementum finibus",
       id: "quisque-quis-est-vitae-mi-elementum-finibus",
     },
+    {
+      title: "Donec efficitur massa nisi",
+      id: "donec-efficitur-massa-nisi",
+    },
+    {
+      title: "Aenean luctus lorem nec orci rutrum vulputate",
+      id: "aenean-luctus-lorem-nec-orci-rutrum-vulputate",
+    },
+    {
+      title: "Maecenas sollicitudin euismod risus",
+      id: "maecenas-sollicitudin-euismod-risus",
+    },
   ];
 
   return (
@@ -233,7 +245,9 @@ const PostWithToc = () => {
                   </section>
 
                   <section>
-                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                    <h3
+                      className="text-2xl font-bold mt-7 mb-3"
+                      id="quisque-quis-est-vitae-mi-elementum-finibus">
                       Quisque quis est vitae mi elementum finibus
                     </h3>
 
@@ -248,7 +262,9 @@ const PostWithToc = () => {
                   </section>
 
                   <section>
-                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                    <h3
+                      className="text-2xl font-bold mt-7 mb-3"
+                      id="donec-efficitur-massa-nisi">
                       Donec efficitur massa nisi
                     </h3>
 
@@ -279,7 +295,9 @@ const PostWithToc = () => {
                   </section>
 
                   <section>
-                    <h3 className="text-2xl font-bold mt-7 mb-3">
+                    <h3
+                      className="text-2xl font-bold mt-7 mb-3"
+                      id="aenean-luctus-lorem-nec-orci-rutrum-vulputate">
                       Aenean luctus lorem nec orci rutrum vulputate
                     </h3>
 
@@ -303,7 +321,9 @@ const PostWithToc = () => {
                 </section>
 
                 <section>
-                  <h2 className="text-3xl font-bold mt-7 mb-3">
+                  <h2
+                    className="text-3xl font-bold mt-7 mb-3"
+                    id="maecenas-sollicitudin-euismod-risus">
                     Maecenas sollicitudin euismod risus
                   </h2>
 

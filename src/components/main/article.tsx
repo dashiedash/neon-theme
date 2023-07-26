@@ -207,10 +207,13 @@ interface TableOfContentsProps {
   headings: { title: string; id: string }[];
 }
 
-export const TableOfContents: React.FC<TableOfContentsProps> = ({ headings }) => {
+export const TableOfContents: React.FC<TableOfContentsProps> = ({
+  headings,
+}) => {
   return (
-    <aside className="bg-white p-8 drop-shadow-xl rounded-xl my-8">
-      <h3 className="text-xl font-bold mb-4">Table of Contents</h3>
+    <aside className="bg-slate-50 p-8 rounded-xl my-4">
+      <h2 className="text-xl font-bold mb-2">Table of Contents</h2>
+      <hr className="mb-4" />
       <ul className="space-y-2">
         {headings.map((heading) => (
           <li key={heading.id}>
