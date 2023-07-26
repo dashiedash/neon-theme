@@ -56,17 +56,17 @@ const Footer = () => {
           <div className="flex justify-between flex-wrap">
             <a
               href=""
-              className="mr-2 mb-2 hover:underline underline-offset-4 decoration-2 decoration-rose-500">
+              className="mr-2 mb-2 underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-rose-500 transition duration-200 ease-in-out">
               Privacy Policy
             </a>
             <a
               href=""
-              className="mr-2 mb-2 hover:underline underline-offset-4 decoration-2 decoration-rose-500">
+              className="mr-2 mb-2 underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-rose-500 transition duration-200 ease-in-out">
               Terms and Conditions
             </a>
             <a
               href=""
-              className="mr-2 mb-2 hover:underline underline-offset-4 decoration-2 decoration-rose-500">
+              className="mr-2 mb-2 underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-rose-500 transition duration-200 ease-in-out">
               Contact
             </a>
           </div>

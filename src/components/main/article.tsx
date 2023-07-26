@@ -224,16 +224,22 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
 }) => {
   const renderHeadings = (headings: Heading[], level: number) => {
     return (
-      <ul style={{ marginLeft: `${level * 0.5}rem` }} className="py-1 space-y-1">
+      <ol
+        style={{ marginLeft: `${level * 0.5}rem` }}
+        className="py-1 space-y-1 list-decimal">
         {headings.map((heading) => (
-          <li key={heading.id}>
-            <a href={`#${heading.id}`}>{heading.title}</a>
+          <li key={heading.id} className="pl-2">
+            <a
+              href={`#${heading.id}`}
+              className="underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-rose-500 transition duration-200 ease-in-out">
+              {heading.title}
+            </a>
             {heading.subheadings && (
               <>{renderHeadings(heading.subheadings, level + 1)}</>
             )}
           </li>
         ))}
-      </ul>
+      </ol>
     );
   };
 

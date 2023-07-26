@@ -23,7 +23,7 @@ const BackToTop = () => {
     <button
       className={`${
         isVisible ? "block" : "hidden"
-      } text-sm hover:underline underline-offset-4 decoration-2 decoration-rose-500`}
+      } text-sm underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-rose-500 transition duration-200 ease-in-out`}
       onClick={scrollToTop}>
       <svg
         xmlns="http://www.w3.org/2000/svg"

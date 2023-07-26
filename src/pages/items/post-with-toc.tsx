@@ -54,7 +54,6 @@ const PostWithToc = () => {
           title: "Aenean luctus lorem nec orci rutrum vulputate",
           id: "aenean-luctus-lorem-nec-orci-rutrum-vulputate",
           level: 2,
-          subheadings: [{ title: "test", id: "test", level: 3 }],
         },
       ],
     },
