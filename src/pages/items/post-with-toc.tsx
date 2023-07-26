@@ -28,30 +28,40 @@ const PostWithToc = () => {
     {
       title: "I’ll never forget my father’s advice",
       id: "ill-never-forget-my-fathers-advice",
+      level: 1,
     },
     {
       title: "Quitters never win. Winners never quit!",
       id: "quitters-never-win-winners-never-quit",
-    },
-    {
-      title: "Suspendisse iaculis rutrum felis, et cursus",
-      id: "suspendisse-iaculis-rutrum-felis-et-cursus",
-    },
-    {
-      title: "Quisque quis est vitae mi elementum finibus",
-      id: "quisque-quis-est-vitae-mi-elementum-finibus",
-    },
-    {
-      title: "Donec efficitur massa nisi",
-      id: "donec-efficitur-massa-nisi",
-    },
-    {
-      title: "Aenean luctus lorem nec orci rutrum vulputate",
-      id: "aenean-luctus-lorem-nec-orci-rutrum-vulputate",
+      level: 1,
+      subheadings: [
+        {
+          title: "Suspendisse iaculis rutrum felis, et cursus",
+          id: "suspendisse-iaculis-rutrum-felis-et-cursus",
+          level: 2,
+        },
+        {
+          title: "Quisque quis est vitae mi elementum finibus",
+          id: "quisque-quis-est-vitae-mi-elementum-finibus",
+          level: 2,
+        },
+        {
+          title: "Donec efficitur massa nisi",
+          id: "donec-efficitur-massa-nisi",
+          level: 2,
+        },
+        {
+          title: "Aenean luctus lorem nec orci rutrum vulputate",
+          id: "aenean-luctus-lorem-nec-orci-rutrum-vulputate",
+          level: 2,
+          subheadings: [{ title: "test", id: "test", level: 3 }],
+        },
+      ],
     },
     {
       title: "Maecenas sollicitudin euismod risus",
       id: "maecenas-sollicitudin-euismod-risus",
+      level: 1,
     },
   ];
 
@@ -83,7 +93,7 @@ const PostWithToc = () => {
 
                 <TableOfContents headings={headings} />
 
-                <p className="mb-5">
+                <p className="mb-5 ml-5">
                   Almost instantly the whole truth of the transaction seemed to
                   rush upon her mind, and her wrath was inconceivably violent.
                   She asked me a thousand questions in a breath; but,

@@ -204,23 +204,44 @@ export const ExternalArticle = ({
 
 // Table of Contents
 interface TableOfContentsProps {
-  headings: { title: string; id: string }[];
+  headings: {
+    title: string;
+    id: string;
+    level: number;
+    subheadings?: Heading[];
+  }[];
+}
+
+interface Heading {
+  title: string;
+  id: string;
+  level: number;
+  subheadings?: Heading[];
 }
 
 export const TableOfContents: React.FC<TableOfContentsProps> = ({
   headings,
 }) => {
+  const renderHeadings = (headings: Heading[], level: number) => {
+    return (
+      <ul style={{ marginLeft: `${level * 0.5}rem` }} className="py-1 space-y-1">
+        {headings.map((heading) => (
+          <li key={heading.id}>
+            <a href={`#${heading.id}`}>{heading.title}</a>
+            {heading.subheadings && (
+              <>{renderHeadings(heading.subheadings, level + 1)}</>
+            )}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   return (
     <aside className="bg-slate-50 p-8 rounded-xl my-4">
       <h2 className="text-xl font-bold mb-2">Table of Contents</h2>
       <hr className="mb-4" />
-      <ul className="space-y-2">
-        {headings.map((heading) => (
-          <li key={heading.id}>
-            <a href={`#${heading.id}`}>{heading.title}</a>
-          </li>
-        ))}
-      </ul>
+      {renderHeadings(headings, 1)}
     </aside>
   );
 };
